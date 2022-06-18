@@ -149,6 +149,16 @@ impl Primes {
         }
     }
 
+    /// Checks whether a number is prime.
+    ///
+    /// This method generates all the primes up to at least `n` in order to
+    /// check if it's prime.
+    pub fn is_prime_mut(&mut self, n: usize) -> bool {
+        self.generate_to(n);
+
+        !self.sieve[n]
+    }
+
     /// Returns an immutable reference to the underlying sieve of Eratosthenes.
     ///
     /// To check if number is in the sieve, simply use it as the index.
