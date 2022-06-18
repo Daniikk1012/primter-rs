@@ -320,6 +320,20 @@ mod tests {
     }
 
     #[test]
+    fn is_prime_mut() {
+        let mut primes = Primes::new();
+
+        assert_eq!(primes.is_prime_mut(0), false);
+        assert_eq!(primes.is_prime_mut(1), false);
+        assert_eq!(primes.is_prime_mut(2), true);
+        assert_eq!(primes.is_prime_mut(3), true);
+        assert_eq!(primes.is_prime_mut(4), false);
+        assert_eq!(primes.is_prime_mut(5), true);
+        assert_eq!(primes.is_prime_mut(100), false);
+        assert_eq!(primes.is_prime_mut(101), true);
+    }
+
+    #[test]
     fn into_iter() {
         let mut result = Vec::new();
 
