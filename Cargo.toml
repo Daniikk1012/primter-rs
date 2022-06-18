@@ -2,7 +2,7 @@
 name = "primter"
 description = "Prime number iterator based on sieve of Eratosthenes"
 readme = "README.md"
-repository = "https://github.com/Daniikk1012/primter"
+repository = "https://github.com/Daniikk1012/primter-rs"
 version = "0.1.0"
 edition = "2021"
 license = "MPL-2.0"
